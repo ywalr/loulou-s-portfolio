@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heart shape -->
+  <path d="M50,80 
+           C25,60 15,40 25,30
+           C35,20 45,25 50,35
+           C55,25 65,20 75,30
+           C85,40 75,60 50,80Z" 
+        fill="none" 
+        stroke="#943b5e" 
+        stroke-width="1.5"
+        stroke-linecap="round"/>
+  
+  <!-- Left eye -->
+  <path d="M35,40 
+           C35,38 37,36 40,36
+           C43,36 45,38 45,40
+           C45,42 43,44 40,44
+           C37,44 35,42 35,40Z"
+        fill="none"
+        stroke="#943b5e"
+        stroke-width="1"/>
+        
+  <!-- Right eye -->
+  <path d="M55,40
+           C55,38 57,36 60,36
+           C63,36 65,38 65,40
+           C65,42 63,44 60,44
+           C57,44 55,42 55,40Z"
+        fill="none"
+        stroke="#943b5e"
+        stroke-width="1"/>
+</svg>
