@@ -1,0 +1,81 @@
+/* Styles de navigation */
+.main-navigation {
+    background: var(--background);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 20px 40px;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a.active {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.submenu li {
+    padding: 8px 20px;
+}
+
+.has-submenu > a::after {
+    content: "▼";
+    font-size: 8px;
+    margin-left: 5px;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.submenu a:hover {
+    background-color: rgba(0,0,0,0.03);
+}
